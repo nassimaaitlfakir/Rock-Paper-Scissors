@@ -1,0 +1,130 @@
+body{
+    font-family: arial, dans-serif;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: hsl(330, 35%, 84%);
+    color: hsl(215, 64%, 12%);
+
+}
+h1{
+    font-size: 3.5rem;
+    color: hsl(215, 64%, 12%);
+
+}
+.choices{
+    margin-bottom: 50px;
+}
+.choices button{
+    font-size: 7.5rem;
+    min-width: 140px;
+    margin: 0 10px;
+    border-radius: 260px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    border: none;
+    
+}
+#rock{
+    background-color: hsl(318, 32%, 66%);
+}
+#rock:hover{
+    background-color: hsl(318, 32%, 56%);
+}
+#rock:active{
+    background-color: hsl(318, 32%, 46%);
+}
+#paper{
+    background-color: hsl(212, 43%, 66%);
+}
+#paper:hover{
+    background-color: hsl(212, 43%, 56%);
+}
+#paper:active{
+    background-color: hsl(212, 43%, 46%);
+}
+#scissors{
+    background-color: hsl(211, 42%, 26%);
+}
+#scissors:hover{
+    background-color:hsl(211, 42%, 16%);
+}
+#scissors:active{
+    background-color: hsl(211, 42%, 6%);
+}
+
+button img {
+    max-width: 130px;
+    max-height: 90px;
+    
+}
+#playerDisplay, #computerDisplay{
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+#resultDisplay{
+    font-size: 5rem;
+    margin: 30px 0;
+    
+}
+.scoreDisplay{
+    font-size: 2rem;
+}
+.winText , #playerScoreDisplay{
+    color:hsl(318, 89%, 46%);
+}
+.loseText, #computerScoreDisplay{
+    color: hsl(212, 76%, 78%);
+}
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px yellow;
+    }
+    50% {
+        box-shadow: 0 0 20px gold;
+    }
+    100% {
+        box-shadow: 0 0 5px yellow;
+    }
+}
+
+.winAnimation {
+    animation: glow 1s infinite alternate;
+}
+
+.winner-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 10px;
+    z-index: 999;
+}
+
+.winner-card h2 {
+    color: hsl(215, 64%, 12%);
+}
+
+.winner-card button {
+    padding: 10px 20px;
+    background-color: hsl(330, 35%, 84%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.winner-card button:hover {
+    background-color: hsl(330, 35%, 74%);
+}
+.winner-card button:active {
+    background-color: hsl(330, 35%, 64%);
+}
