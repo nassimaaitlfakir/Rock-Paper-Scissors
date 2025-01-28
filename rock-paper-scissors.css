@@ -17,6 +17,7 @@ h1{
 }
 .choices{
     margin-bottom: 50px;
+    height: 100vh;
 }
 .choices button{
     font-size: 7.5rem;
